@@ -1,0 +1,88 @@
+.card{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    width: 600px;
+    height: 500px;
+    box-shadow: -35px -35px 20px #ffffff, 35px 35px 20px #e4e4e4;
+}
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: -35px -35px 20px #ffffff, 35px 35px 20px #d4d4d4;
+}
+.card-image{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+.card-content{
+    user-select: none;
+    width: 50%;
+    padding: 2rem;
+}
+.card-content .category{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.05em;
+    font-size: 14px;
+}
+.card-content .title{
+    font-family: 'Fraunces', serif;
+}
+.card-content .desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.card-content .money{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.card-content .money h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+.card-content .money .discount {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+}
+.buy{
+    padding: 1rem;
+    width: 80%;
+    border-radius: 11px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.buy:hover{
+    background-color: hsl(158, 82%, 13%);
+}
+.buy img{
+    width: 20px;
+    height: 20px;
+    user-select: none;
+}
+.buy .text{
+    user-select: none;
+}
+@media only screen and (max-width: 650px){
+    .card{
+        width: 350px;
+        height: 600px;
+        flex-direction: column;
+    }
+    .card-image{
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-content{
+        width: auto;
+        padding: 2rem;
+    }
+}
