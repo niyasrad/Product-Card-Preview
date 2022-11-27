@@ -1,4 +1,5 @@
 .card{
+    transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
     border-radius: 15px;
@@ -10,6 +11,7 @@
 }
 .card:hover{
     transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
     box-shadow: -35px -35px 20px #ffffff, 35px 35px 20px #d4d4d4;
 }
 .card-image{
@@ -24,15 +26,16 @@
 }
 .card-content .category{
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1.05em;
-    font-size: 14px;
+    letter-spacing: 1.01em;
+    font-size: 0.8rem;
 }
 .card-content .title{
     font-family: 'Fraunces', serif;
 }
 .card-content .desc{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
 }
 .card-content .money{
     display: flex;
@@ -48,6 +51,7 @@
     text-decoration: line-through;
 }
 .buy{
+    transition: all 0.3s ease-in-out;
     padding: 1rem;
     width: 80%;
     border-radius: 11px;
@@ -60,6 +64,7 @@
     cursor: pointer;
 }
 .buy:hover{
+    transition: all 0.3s ease-in-out;
     background-color: hsl(158, 82%, 13%);
 }
 .buy img{
